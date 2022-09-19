@@ -1,4 +1,4 @@
-# MyFirstApp
+# Routing projected made by following the lecture in https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656346#overview
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
