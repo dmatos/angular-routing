@@ -15,17 +15,7 @@ export class ServerComponent implements OnInit {
               private activatedRoute: ActivatedRoute,
               private router: Router) { }
 
-  private updateServerAttr(params: Params) {
-    const id = params['id'] === undefined ? 1 : +params['id'];
-    this.server = this.serversService.getServer(id);
-  }
-
   ngOnInit() {
-    // this.updateServerAttr(this.activatedRoute.snapshot.params);
-    // this.activatedRoute.params
-    //   .subscribe((params: Params) => {
-    //     this.updateServerAttr(params);
-    //   });
     this.activatedRoute.data.subscribe((data: Data) => {
       this.server = data['server'];
     });
